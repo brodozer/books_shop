@@ -1,0 +1,46 @@
+{
+	"name": "shelter",
+	"version": "1.0.0",
+	"description": "",
+	"main": "gulpfile.js",
+	"type": "module",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "gulp start",
+		"build": "NODE_ENV=production gulp build"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/brodozer/books_shop.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/brodozer/books_shop/issues"
+	},
+	"homepage": "https://github.com/brodozer/books_shop#readme",
+	"devDependencies": {
+		"@babel/core": "^7.18.9",
+		"@babel/preset-env": "^7.18.9",
+		"babel-loader": "^8.2.5",
+		"babel-plugin-transform-remove-console": "^6.9.4",
+		"bootstrap": "^5.2.0",
+		"bootstrap-icons": "^1.10.2",
+		"browser-sync": "^2.27.10",
+		"del": "^7.0.0",
+		"gulp": "^4.0.2",
+		"gulp-autoprefixer": "^8.0.0",
+		"gulp-clean-css": "^4.3.0",
+		"gulp-file-include": "^2.3.0",
+		"gulp-htmlmin": "^5.0.1",
+		"gulp-if": "^3.0.0",
+		"gulp-rename": "^2.0.0",
+		"gulp-replace": "^1.1.3",
+		"gulp-sass": "^5.1.0",
+		"gulp-version-number": "^0.2.4",
+		"normalize-scss": "^7.0.1",
+		"sass": "^1.54.0",
+		"webpack": "^5.74.0",
+		"webpack-stream": "^7.0.0"
+	}
+}
