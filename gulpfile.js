@@ -29,7 +29,7 @@ const path = {
 		html: prod + "/",
 		js: prod + "/js/",
 		css: prod + "/css/",
-		images: prod + "/img/",
+		images: prod + "/images/",
 		data: prod + "/data/",
 		fonts: prod + "/fonts/",
 	},
@@ -150,11 +150,11 @@ const js = () => {
 
 const copyImages = () => {
 	return gulp.src(path.source.images).pipe(gulp.dest(path.prod.images));
-}
+};
 
 const copyData = () => {
 	return gulp.src(path.source.data).pipe(gulp.dest(path.prod.data));
-}
+};
 
 // fonts
 
@@ -193,5 +193,13 @@ export const start = gulp.series(
 	copyImages,
 	gulp.parallel(watchFiles, webServer)
 );
-export const build = gulp.series(clean, html, scss, js, fonts, copyData, copyImages);
+export const build = gulp.series(
+	clean,
+	html,
+	scss,
+	js,
+	fonts,
+	copyData,
+	copyImages
+);
 export { isProd, copyData, copyImages, clean };
