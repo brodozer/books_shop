@@ -1,0 +1,33 @@
+.responsive {
+	position: relative;
+	height: 0;
+	overflow: hidden;
+	padding-bottom: 140%;
+	img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		//top: -50%;
+		//left: -50%;
+		//transform: translate3d(-50%, -50%, 0);
+	}
+}
+
+.books {
+	gap: 24px 0;
+}
+
+.card {
+	.card-body {
+		display: flex;
+		flex-direction: column;
+		.card-subtitle {
+			flex: 1 1 auto;
+		}
+		.book-price {
+			font-size: 26px;
+			font-weight: bold;
+			color: rgb(13, 110, 253);
+		}
+	}
+}
