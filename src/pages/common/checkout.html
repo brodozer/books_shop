@@ -1,1 +1,101 @@
-<div class="order_form d-none"></div>
+<div class="checkout popup">
+	<h3 class="text-center m-3">Confirm order</h3>
+	<form class="form row g-3">
+		<div class="col-sm-6">
+			<label for="inputName" class="form-label">Name</label>
+			<input type="text" class="form-control" id="inputName" />
+		</div>
+		<div class="col-sm-6">
+			<label for="inputSurname" class="form-label">Surname</label>
+			<input type="text" class="form-control" id="inputSurname" />
+		</div>
+
+		<div class="col-md-8">
+			<label for="inputStreet" class="form-label">Street</label>
+			<input type="text" class="form-control" id="inputStreet" />
+		</div>
+		<div class="col-md-2 col-6">
+			<label for="inputHouse" class="form-label">House</label>
+			<input type="text" class="form-control" id="inputHouse" />
+		</div>
+		<div class="col-md-2 col-6">
+			<label for="inputFlatNumber" class="form-label">Flat Number</label>
+			<input type="text" class="form-control" id="inputFlatNumber" />
+		</div>
+		<fieldset class="col-12">
+			<legend class="col-form-label pt-0">Choose the payment type</legend>
+
+			<div class="form-check">
+				<input
+					class="form-check-input"
+					type="radio"
+					name="paymentType"
+					id="paymentCash"
+					value="cash"
+					checked
+				/>
+				<label class="form-check-label" for="paymentCash"> Cash </label>
+			</div>
+			<div class="form-check">
+				<input
+					class="form-check-input"
+					type="radio"
+					name="paymentType"
+					id="paymentCard"
+					value="card"
+				/>
+				<label class="form-check-label" for="paymentCard"> Card </label>
+			</div>
+		</fieldset>
+		<fieldset class="col-12">
+			<legend class="col-form-label pt-0">
+				Choose 2 gifts: (optional)
+			</legend>
+			<div class="form-check">
+				<input
+					class="form-check-input"
+					type="checkbox"
+					id="giftCheck"
+				/>
+				<label class="form-check-label" for="giftCheck">
+					pack as a gift
+				</label>
+			</div>
+			<div class="form-check">
+				<input
+					class="form-check-input"
+					type="checkbox"
+					id="postcardCheck"
+				/>
+				<label class="form-check-label" for="postcardCheck">
+					add postcard
+				</label>
+			</div>
+			<div class="form-check">
+				<input
+					class="form-check-input"
+					type="checkbox"
+					id="discountCheck"
+				/>
+				<label class="form-check-label" for="discountCheck">
+					provide 2% discount to the next time
+				</label>
+			</div>
+			<div class="form-check">
+				<input
+					class="form-check-input"
+					type="checkbox"
+					id="pencilCheck"
+				/>
+				<label class="form-check-label" for="pencilCheck">
+					branded pen or pencil
+				</label>
+			</div>
+		</fieldset>
+		<div class="col-12 col-sm-auto">
+			<button type="submit" class="btn btn-primary w-100">
+				Complete
+			</button>
+		</div>
+	</form>
+</div>

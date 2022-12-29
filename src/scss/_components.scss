@@ -1,3 +1,12 @@
+.popup {
+	position: absolute;
+	z-index: 1999;
+	top: 54px;
+	height: calc(100vh - 54px);
+	width: 100%;
+	background-color: #fff;
+}
+
 .responsive {
 	position: relative;
 	height: 0;
@@ -5,29 +14,49 @@
 	padding-bottom: 140%;
 	img {
 		position: absolute;
-		top: 0;
-		left: 0;
-		//top: -50%;
-		//left: -50%;
-		//transform: translate3d(-50%, -50%, 0);
+		top: 50%;
+		left: 50%;
+		transform: translate3d(-50%, -50%, 0);
 	}
+}
+
+.card .book-price {
+	font-size: 26px;
+	font-weight: bold;
+	color: rgb(13, 110, 253);
 }
 
 .books {
 	gap: 24px 0;
+	.card-book {
+		.card-body {
+			display: flex;
+			flex-direction: column;
+			.card-subtitle {
+				flex: 1 1 auto;
+			}
+		}
+	}
 }
 
-.card {
-	.card-body {
-		display: flex;
-		flex-direction: column;
-		.card-subtitle {
-			flex: 1 1 auto;
-		}
-		.book-price {
-			font-size: 26px;
-			font-weight: bold;
-			color: rgb(13, 110, 253);
-		}
+.btn-cart {
+	position: relative;
+	border: none;
+	svg {
+		width: 32px;
+		height: 32px;
+	}
+	.cart-qty {
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		line-height: 20px;
+		vertical-align: middle;
+		position: absolute;
+		top: 0;
+		right: 0;
+		background-color: #ffc107;
+		border-radius: 50%;
+		font-size: 14px;
 	}
 }

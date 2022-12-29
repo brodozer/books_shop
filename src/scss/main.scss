@@ -1,6 +1,11 @@
 @import "vendors.scss";
-@import "preloader.scss";
 @import "components.scss";
+@import "cart.scss";
+@import "checkout.scss";
+
+.scroll-lock {
+	overflow: hidden;
+}
 
 main {
 	padding: 20px 0;

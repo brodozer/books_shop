@@ -7,14 +7,15 @@
 		<title>books shop</title>
 		<link rel="stylesheet" href="css/main.min.css" />
 	</head>
-	<body>
+	<body class="scroll-lock">
 		@@include('common/header.html')
 		<main class="main">
 			<div class="container">
 				<div class="row books"></div>
 			</div>
 		</main>
-		@@include('common/preloader.html') @@include('common/checkout.html')
+		@@include('common/cart.html') @@include('common/preloader.html')
+		@@include('common/checkout.html')
 		<script src="js/main.min.js"></script>
 	</body>
 </html>

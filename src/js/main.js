@@ -8,14 +8,7 @@ class Main {
 		console.log("init");
 		const view = new View();
 		const model = new Model("data/books.json");
-		const booksContainer = document.querySelector(".books");
-		const preloader = document.querySelector(".preloader");
-		const controller = new Controller(
-			model,
-			view,
-			booksContainer,
-			preloader
-		);
+		const controller = new Controller(model, view);
 		controller.init();
 	}
 }
