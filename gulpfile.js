@@ -32,6 +32,7 @@ const path = {
 		images: prod + "/images/",
 		data: prod + "/data/",
 		fonts: prod + "/fonts/",
+		api: prod + "/api/",
 	},
 
 	source: {
@@ -44,6 +45,7 @@ const path = {
 		scss: source + "/scss/main.scss",
 		images: source + "/static/images/*.*",
 		data: source + "/static/data/*.json",
+		api: source + "/static/api/*.php",
 		fonts: source + "/fonts/**/*.*",
 	},
 
@@ -148,12 +150,20 @@ const js = () => {
 
 // static files
 
+const copyStaticFiles = (source, prod) => {
+	return gulp.src(source).pipe(gulp.dest(prod));
+};
+
 const copyImages = () => {
 	return gulp.src(path.source.images).pipe(gulp.dest(path.prod.images));
 };
 
 const copyData = () => {
 	return gulp.src(path.source.data).pipe(gulp.dest(path.prod.data));
+};
+
+const copyApi = () => {
+	return gulp.src(path.source.api).pipe(gulp.dest(path.prod.api));
 };
 
 // fonts
@@ -191,6 +201,7 @@ export const start = gulp.series(
 	fonts,
 	copyData,
 	copyImages,
+	copyApi,
 	gulp.parallel(watchFiles, webServer)
 );
 export const build = gulp.series(
@@ -200,6 +211,7 @@ export const build = gulp.series(
 	js,
 	fonts,
 	copyData,
-	copyImages
+	copyImages,
+	copyApi
 );
-export { isProd, copyData, copyImages, clean };
+export { isProd, copyData, copyImages, copyApi, clean, js };

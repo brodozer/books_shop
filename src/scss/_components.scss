@@ -7,6 +7,17 @@
 	background-color: #fff;
 }
 
+.preloader {
+	z-index: 2000;
+	background-color: rgba($color: #000000, $alpha: 0.7);
+	.message {
+		margin: auto;
+		background-color: #fff;
+		padding: 40px;
+		border-radius: 5px;
+	}
+}
+
 .responsive {
 	position: relative;
 	height: 0;

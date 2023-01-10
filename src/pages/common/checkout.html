@@ -1,26 +1,59 @@
-<div class="checkout popup">
+<div class="checkout popup d-none">
 	<h3 class="text-center m-3">Confirm order</h3>
-	<form class="form row g-3">
+	<form class="form row g-3 needs-validations">
 		<div class="col-sm-6">
 			<label for="inputName" class="form-label">Name</label>
-			<input type="text" class="form-control" id="inputName" />
+			<input
+				type="text"
+				class="form-control"
+				id="inputName"
+				name="name"
+			/>
 		</div>
 		<div class="col-sm-6">
 			<label for="inputSurname" class="form-label">Surname</label>
-			<input type="text" class="form-control" id="inputSurname" />
+			<input
+				type="text"
+				class="form-control"
+				id="inputSurname"
+				name="surname"
+			/>
 		</div>
-
 		<div class="col-md-8">
 			<label for="inputStreet" class="form-label">Street</label>
-			<input type="text" class="form-control" id="inputStreet" />
+			<input
+				type="text"
+				class="form-control"
+				id="inputStreet"
+				name="street"
+			/>
 		</div>
 		<div class="col-md-2 col-6">
-			<label for="inputHouse" class="form-label">House</label>
-			<input type="text" class="form-control" id="inputHouse" />
+			<label for="inputHouseNumber" class="form-label">House</label>
+			<input
+				type="text"
+				class="form-control"
+				id="inputHouseNumber"
+				name="house"
+			/>
 		</div>
 		<div class="col-md-2 col-6">
 			<label for="inputFlatNumber" class="form-label">Flat Number</label>
-			<input type="text" class="form-control" id="inputFlatNumber" />
+			<input
+				type="text"
+				class="form-control"
+				id="inputFlatNumber"
+				name="flatNumber"
+			/>
+		</div>
+		<div class="col-12">
+			<label for="inputDate" class="form-label">Delivery date</label>
+			<input
+				type="date"
+				class="form-control"
+				id="inputDate"
+				name="deliveryDate"
+			/>
 		</div>
 		<fieldset class="col-12">
 			<legend class="col-form-label pt-0">Choose the payment type</legend>
@@ -56,6 +89,7 @@
 					class="form-check-input"
 					type="checkbox"
 					id="giftCheck"
+					value="giftpack"
 				/>
 				<label class="form-check-label" for="giftCheck">
 					pack as a gift
@@ -66,6 +100,7 @@
 					class="form-check-input"
 					type="checkbox"
 					id="postcardCheck"
+					value="postcard"
 				/>
 				<label class="form-check-label" for="postcardCheck">
 					add postcard
@@ -76,6 +111,7 @@
 					class="form-check-input"
 					type="checkbox"
 					id="discountCheck"
+					value="discount"
 				/>
 				<label class="form-check-label" for="discountCheck">
 					provide 2% discount to the next time
@@ -86,6 +122,7 @@
 					class="form-check-input"
 					type="checkbox"
 					id="pencilCheck"
+					value="pencil"
 				/>
 				<label class="form-check-label" for="pencilCheck">
 					branded pen or pencil

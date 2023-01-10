@@ -52,7 +52,7 @@ export class View {
 		
 		`;
 	}
-	getTemplateCartItem(cart) {
+	getTemplateCartItems(cart) {
 		return cart.reduce((tmpl, book) => {
 			const select = this.getTemplateSelectBookQty(
 				book.id,

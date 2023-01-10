@@ -1,4 +1,8 @@
-.form {
-	max-width: 720px;
-	margin: 0 auto;
+.checkout {
+	overflow-y: scroll;
+	padding-bottom: 30px;
+	.form {
+		max-width: 720px;
+		margin: 0 auto;
+	}
 }
